@@ -1,7 +1,9 @@
 <script lang="ts">
+import { createEventDispatcher } from 'svelte';
 import LevelForm from "./LevelForm.svelte";
 import WeaponForm from "./WeaponForm.svelte";
 
+const dispatch = createEventDispatcher();
 let panel = 0;
 
 const config = {
@@ -14,11 +16,12 @@ const config = {
 
 const handleLevelSelection = (event: any) => {
   config.charLvl = event.target.value;
+  dispatch('change', config);
 };
 
 const handleWeaponSelection = (event: any) => {
   config.weapon = event.detail;
-  console.log(config);
+  dispatch('change', config);
 };
 </script>
 
