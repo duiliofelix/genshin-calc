@@ -11,6 +11,10 @@
         // Trigger update
         list = list;
     };
+
+    const handleEditClick = (clickIndex: number) => {
+        list[clickIndex].name = "Raiden"
+    }
 </script>
 
 <style>
@@ -26,9 +30,12 @@
         Lista
         <button on:click={handleAddClick}>+</button>
     </div>
-    {#each list as item}
+    {#each list as item, index}
         <div>
-            <CharListItem item={item}/>
+            <CharListItem
+                item={item}
+                on:edit={() => handleEditClick(index)}
+            />
         </div>
     {/each}
 </Container>

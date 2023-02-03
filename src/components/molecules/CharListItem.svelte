@@ -1,8 +1,13 @@
 <script lang="ts">
+	import { createEventDispatcher } from "svelte";
 	import type CharConfig from "../../types/CharConfig";
 	import Avatar from "../atoms/Avatar.svelte";
 
     export let item: CharConfig;
+
+    const dispatch = createEventDispatcher();
+
+    const handleEditClick = () => dispatch('edit');
 </script>
 
 <style>
@@ -28,7 +33,9 @@
     <div>
         <div class="name">
             <div>{item.name || ''}</div>
-            <button>></button>
+            <button on:click={handleEditClick}>
+                >
+            </button>
         </div>
         <div>
             The catch
