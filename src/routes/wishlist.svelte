@@ -1,3 +1,8 @@
+<script>
+    import CharList from "../components/CharList.svelte";
+    import Container from "../components/Container.svelte";
+</script>
+
 <svelte:head>
     <style>
         body {
@@ -13,18 +18,6 @@
         background-color: rgba(19, 26, 29, .7);
         border-radius: 2px;
         overflow: hidden;
-    }
-
-    .container-header {
-        background: linear-gradient(45deg, rgba(180, 48, 242, 1) 0%, rgba(139, 54, 247, 1) 100%);
-        color: white;
-        padding: 5px 10px;
-    }
-
-    .list-item {
-        border-bottom: 1px solid;
-        border-bottom-color: rgba(180, 48, 242, 1);
-        padding: 5px 10px;
     }
 
     .grid {
@@ -47,25 +40,8 @@
         <span>Wishlist</span>
         <span>Calculator</span>
     </div>
-    <div class="container">
-        <div class="container-header">
-            Lista
-            <button>+</button>
-        </div>
-        <div class="list-item">
-            <div>img</div>
-            <div>
-                <div>
-                    <div>Raiden</div>
-                    <button>></button>
-                </div>
-                <div>
-                    The catch
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
+    <CharList />
+    <Container>
         teste
-    </div>
+    </Container>
 </div>
