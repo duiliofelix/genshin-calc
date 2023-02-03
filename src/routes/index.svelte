@@ -1,8 +1,8 @@
 <script lang="ts">
-import InputPanel from "../components/InputPanel.svelte";
-import CharPicker from "../components/CharPicker.svelte";
-import Stats from "../components/Stats.svelte";
-import Results from "../components/Results.svelte";
+import InputPanel from "../components/organisms/InputPanel.svelte";
+import CharPicker from "../components/molecules/CharPicker.svelte";
+import Stats from "../components/molecules/Stats.svelte";
+import Results from "../components/organisms/Results.svelte";
 
 let charLevel = '1';
 const handleInputChange = (e) => {

@@ -1,6 +1,6 @@
 <script>
-    import CharList from "../components/CharList.svelte";
-    import Container from "../components/Container.svelte";
+    import CharList from "../components/organisms/CharList.svelte";
+    import Container from "../components/atoms/Container.svelte";
 </script>
 
 <svelte:head>

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import CharConfig from "../types/CharConfig";
-    import CharListItem from "./CharListItem.svelte";
-    import Container from "./Container.svelte";
+	import CharConfig from "../../types/CharConfig";
+    import CharListItem from "../molecules/CharListItem.svelte";
+    import Container from "../atoms/Container.svelte";
 
     let list: CharConfig[] = [];
 

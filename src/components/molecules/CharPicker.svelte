@@ -1,5 +1,5 @@
 <script lang="ts">
-import CharButton from "./CharButton.svelte";
+import CharButton from "../atoms/CharButton.svelte";
 </script>
 
 <div class="container">

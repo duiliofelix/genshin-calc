@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type CharConfig from "../types/CharConfig";
+	import type CharConfig from "../../types/CharConfig";
 
     export let item: CharConfig;
 </script>
