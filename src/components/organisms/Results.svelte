@@ -15,6 +15,7 @@ let flatAtkBonus = 311;
 let flatDmg = (baseAtk + baseWpnAtk) * (1 + artfactBonus) + burstBonus + flatAtkBonus;
 let autoDmg = flatDmg * (1 + elDmg);
 </script>
+
 <table>
   <tr>
     <td>Autos</td>
