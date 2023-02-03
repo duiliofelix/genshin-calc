@@ -1,6 +1,9 @@
 <script lang="ts">
-	import CharConfig from "../../types/CharConfig";
+    import { openModal } from 'svelte-modals';
+
+    import CharConfig from "../../types/CharConfig";
     import CharListItem from "../molecules/CharListItem.svelte";
+    import CharPickerModal from './CharPickerModal.svelte';
     import Container from "../atoms/Container.svelte";
 
     let list: CharConfig[] = [];
@@ -13,7 +16,8 @@
     };
 
     const handleEditClick = (clickIndex: number) => {
-        list[clickIndex].name = "Raiden"
+        list[clickIndex].name = "Raiden";
+        openModal(CharPickerModal);
     }
 </script>
 
